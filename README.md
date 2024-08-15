@@ -5,10 +5,10 @@
 ## Features
 
 - Add notes
-- Get specific notes by line number
-- List all notes with colored line numbers
-- Remove specific notes by line number
+- Remove notes
 - Copy to the clipboard
+- Get specific notes by line number
+- List all notes with colored line number
 
 ## Commands
 ```
@@ -16,10 +16,7 @@
   -g <line-number> Get a specific note
   -r <line-number> Remove a specific note
   -c <line-number> Copy a specific note to clipboard
-  -rr OPTIONS       Remove notes with filtering options:
-     -x <numbers>       Remove all notes except specified line numbers
-     -tail <count>      Remove the last 'n' notes
-     -head <count>      Remove the first 'n' notes
+  -rr              Remove all the notes 
   -h               Display help message
 ```
 
@@ -54,7 +51,7 @@ nt -g 2
 
 nt -r 3
    ```
-- Copy a Specific Note to Clipboard:
+- Copy a Specific Note to Clipboard: for this one you must install 'xclip'
 
 ```sh
 
@@ -82,7 +79,7 @@ Add the output of grep:
 
 ```sh
 
-grep "pattern" somefile.txt | nta
+cat somefile.txt | grep "pattern" | nta
    ```
 - Display Help:
 
