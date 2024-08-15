@@ -26,7 +26,7 @@ To install `nt`:
 
  ```
 
-git clone https://github.com/Zmp0/Note.git && cd Note && sudo cp nt /usr/local/bin 
+git clone https://github.com/Zmp0/Note.git && cd Note && sudo cp nt /usr/local/bin && nt -a 'Welcome to NoTerminal'
 
  ```
 
