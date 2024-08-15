@@ -20,7 +20,6 @@
      -x <numbers>       Remove all notes except specified line numbers
      -tail <count>      Remove the last 'n' notes
      -head <count>      Remove the first 'n' notes
-  -f <line-number> Mark a note as favorite
   -h               Display help message
 ```
 
@@ -107,11 +106,6 @@ grep "pattern" somefile.txt | nta
   ```bash
       nt -rr -head 5
   ```
-- Mark a Note as Favorite:
-
-```bash
-nt -f <line-number>
-   ```
 - Display Help:
 
 ```bash
@@ -130,5 +124,4 @@ Useful Alias:
    alias ntr='nt -r'
    alias ntc='nt -c'
    alias ntrr='nt -rr'
-   alias ntf='nt -f'
  ```
