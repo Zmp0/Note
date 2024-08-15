@@ -30,6 +30,11 @@ git clone https://github.com/Zmp0/Note.git && cd Note && sudo cp nt /usr/local/b
 
  ```
 
+To uninstall `nt`
+ ``` bash
+sudo rm -rf /usr/local/bin/nt
+ ```
+
 
 ### Examples
 
