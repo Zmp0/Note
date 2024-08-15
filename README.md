@@ -84,28 +84,6 @@ Add the output of grep:
 
 grep "pattern" somefile.txt | nta
    ```
-- Remove Notes with Filters:
-
-    Remove all notes except specified line numbers:
-
-     ```bash
-  nt -rr -x 1 3 5 6
-   ```
-- Remove notes excluding specific numbers (using / notation):
-      
-  ```bash
-      nt -rr -x 10/20
-  ```
-- Remove the last 'n' notes (tail):
-      
-  ```bash
-      nt -rr -tail 10
-  ```
-- Remove the first 'n' notes (head):
-      
-  ```bash
-      nt -rr -head 5
-  ```
 - Display Help:
 
 ```bash
