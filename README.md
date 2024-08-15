@@ -28,29 +28,12 @@
 
 To install `nt`:
 
-. Make the `install_nt.sh` script executable and run it:
+ ```
 
-   ```sh
-   chmod +x install.sh
-   ./install.sh
-   ```
-
-. To remove it the same thing
-
-   ```sh
-   chmod +x uninstall.sh
-   ./uninstall.sh
-   ```
-. The install.sh script have alias that add to the shell configuration file,and the uninstall removes it
+git clone https://github.com/Zmp0/Note.git && cd Note &&
 
  ```
-   alias nta='nt -a'
-   alias ntg='nt -g'
-   alias ntr='nt -r'
-   alias ntc='nt -c'
-   alias ntrr='nt -rr'
-   alias ntf='nt -f'
- ```
+
 
 ### Examples
 
@@ -135,3 +118,17 @@ nt -f <line-number>
 
 nt -h
    ```
+
+
+
+Useful Alias:
+
+
+ ```
+   alias nta='nt -a'
+   alias ntg='nt -g'
+   alias ntr='nt -r'
+   alias ntc='nt -c'
+   alias ntrr='nt -rr'
+   alias ntf='nt -f'
+ ```
