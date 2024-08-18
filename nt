@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # File to store notes
 NOTES_FILE="${HOME}/.nt_notes"
 
@@ -40,7 +39,7 @@ remove_all_notes() {
 remove_notes_with_filters() {
     local filter_type="$1"
     shift
-    
+
     case "$filter_type" in
         -x)
             # Remove all except specified line numbers
@@ -89,11 +88,7 @@ display_help() {
     echo "  -g <line-number> Get a specific note"
     echo "  -r <line-number> Remove a specific note"
     echo "  -c <line-number> Copy a specific note to clipboard"
-    echo "  -rr OPTIONS       Remove notes with filtering options:"
-    echo "     -x <numbers>       Remove all notes except specified line numbers"
-    echo "     -tail <count>      Remove the last 'n' notes"
-    echo "     -head <count>      Remove the first 'n' notes"
-    echo "  -f <line-number> Mark a note as favorite"
+    echo "  -rr              Remove notes with filtering options:"
     echo "  -h               Display this help message"
 }
 
